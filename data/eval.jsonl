@@ -1,0 +1,32 @@
+{"query": "帮我在网上搜一下实时信息", "expect": ["10e9928a__duckduckgo-search", "billyutw__web-search", "jacky1n7__openclaw-tavily-search", "steipete__brave-search", "whiteknight07__exa-web-search-free", "gpyangyoujun__multi-search-engine", "uroboros1205__prismfy-search", "anysearch-ai__anysearch"]}
+{"query": "用百度搜索这个关键词", "expect": ["ide-rea__baidu-search"]}
+{"query": "把这段文字转成 Markdown", "expect": ["steipete__markdown-converter"]}
+{"query": "帮我处理一个 Word 文档", "expect": ["ivangdavila__word-docx"]}
+{"query": "把 Excel 表格转成 CSV", "expect": ["ivangdavila__excel-xlsx"]}
+{"query": "把文件上传到百度网盘", "expect": ["wscats__baidu-netdisk-skills"]}
+{"query": "从微云网盘下载文件", "expect": ["wscats__weiyun-skills"]}
+{"query": "查一下 A 股的实时行情", "expect": ["mbpz__akshare-stock", "stanleychanh__tushare-finance", "financial-ai-analyst__mx-finance-data", "paulshe__china-stock-analysis", "robin797860__stock-watcher"]}
+{"query": "美股某只股票现在多少钱", "expect": ["ajanraj__yahoo-finance", "kys42__stock-market-pro", "udiedrichsen__stock-analysis"]}
+{"query": "把我的讲稿做成一个 PPT", "expect": ["wwlyzzyorg__ppt-generator", "ide-rea__ai-ppt-generator"]}
+{"query": "帮我写一段产品推广文案", "expect": ["jk-0001__copywriting"]}
+{"query": "把这篇文章总结成三句话", "expect": ["mkpareek0315__summarize-pro"]}
+{"query": "画一个流程图", "expect": ["matthewyin__diagram-generator"]}
+{"query": "生成一张猫的图片", "expect": ["steipete__openai-image-gen", "steipete__nano-banana-pro"]}
+{"query": "帮我写个 Dockerfile", "expect": ["arnarsson__docker-essentials"]}
+{"query": "怎么撤销上一次 git commit", "expect": ["arnarsson__git-essentials"]}
+{"query": "帮我优化这条 SQL 查询", "expect": ["gitgoodordietrying__sql-toolkit"]}
+{"query": "今天北京天气怎么样", "expect": ["steipete__weather"]}
+{"query": "在 Spotify 上放首歌", "expect": ["steipete__spotify-player"]}
+{"query": "在苹果备忘录里记一笔", "expect": ["steipete__apple-notes"]}
+{"query": "提醒我明天早上开会", "expect": ["steipete__apple-reminders"]}
+{"query": "把图片里的文字提取出来", "expect": ["shaw555__ocr-local"]}
+{"query": "把这段文字转成语音", "expect": ["i3130002__edge-tts"]}
+{"query": "掘金上今天有什么热门文章", "expect": ["wscats__juejin-skills"]}
+{"query": "把 QQ 空间的照片下载下来", "expect": ["wscats__qq-zone-photo"]}
+{"query": "下载 B 站视频的字幕", "expect": ["wscats__bilibili-all-in-one"]}
+{"query": "用腾讯文档新建一个文档", "expect": ["liyang58__tencent-docs"]}
+{"query": "帮我准备一下面试常见问题", "expect": ["wscats__interview-simulator"]}
+{"query": "帮我订一张明天去上海的机票", "expect": []}
+{"query": "红烧肉怎么做", "expect": []}
+{"query": "把这段法语翻译成中文", "expect": []}
+{"query": "帮我预约下周三的牙医", "expect": []}
