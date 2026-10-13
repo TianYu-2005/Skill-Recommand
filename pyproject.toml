@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-recommand"
+version = "0.1.0"
+description = "技能推荐链路：召回 → 精排 → 决策"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+# 可选增强，缺失时链路会自动降级，不装也能跑。
+# 稠密召回不需要任何 SDK —— 标准库直连 OpenAI 兼容端点，配置见 .env.example
+yaml = ["pyyaml>=6.0"]
+
+[project.scripts]
+skill-recall = "skill_router.recall:main"
+
+[tool.setuptools]
+packages = ["skill_router"]
