@@ -179,7 +179,8 @@ skill_router/
 └── server.py      本地演示服务
 web/index.html     单页前端
 data/skills/       演示技能库（10 个，中文描述）
-data/clawhub/      从 ClawHub 下载的技能（已 gitignore，用 scripts/fetch_clawhub.py 拉取）
+data/clawhub/      从 ClawHub 下载的技能（已入库，只含 SKILL.md 与 _meta.json；
+                   完整技能包用 scripts/fetch_clawhub.py 拉取）
 data/eval.jsonl    标注集
 scripts/           工具脚本（ClawHub 批量下载）
 tests/             离线测试（不联网、不需要 key）

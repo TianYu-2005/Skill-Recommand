@@ -17,8 +17,14 @@ env/
 .vscode/
 .pytest_cache/
 
-# 从 ClawHub 批量下载的技能：体积大，不入库。
-# 用 `python scripts/fetch_clawhub.py --count 200` 重新拉取即可。
-# 只保留来源记录，便于追溯下载的是哪一批。
-data/clawhub/*
+# 从 ClawHub 下载的技能：只入库 SKILL.md 与来源记录。
+#
+# 链路只读 SKILL.md 里的 name + description 两个字段，附属脚本根本不参与；
+# 不入库它们，一是把体积从 43 MB 压到数百 KB，云服务器可以秒拉；
+# 二是避免把一批未做人工审查的第三方脚本（.py / .js / .sh）公开分发出去。
+#
+# 需要完整技能包时：python scripts/fetch_clawhub.py --count 200
+data/clawhub/**
+!data/clawhub/**/
+!data/clawhub/**/SKILL.md
 !data/clawhub/_meta.json
