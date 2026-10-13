@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+.venv/
+venv/
+env/
+
+# 真实配置（含密钥）不入库；仓库里追踪的是无值的模板 .env.example
+.env
+!.env.example
+
+.idea/
+.vscode/
+.pytest_cache/
+
+# 从 ClawHub 批量下载的技能：体积大，不入库。
+# 用 `python scripts/fetch_clawhub.py --count 200` 重新拉取即可。
+# 只保留来源记录，便于追溯下载的是哪一批。
+data/clawhub/*
+!data/clawhub/_meta.json
