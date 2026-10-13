@@ -231,6 +231,22 @@ class DenseRecall:
         return self._vectors
 
 
+def build_dense_channel(texts: Sequence[str], enabled: bool = True) -> Optional[DenseRecall]:
+    """按配置接上稠密通路，接不上就返回 ``None``。
+
+    两种「接不上」：开关没开、或拿不到 embedding key。两种情况下链路都静默退化为
+    纯 BM25，不报错 —— 这一路是可选的。
+
+    编排层与评估脚本共用这里，省得两边各写一份同样的 key 判断。
+    """
+    if not enabled:
+        return None
+    embedder = OpenAIEmbedder.from_env()
+    if embedder is None:
+        return None
+    return DenseRecall(list(texts), embedder)
+
+
 # ---------------------------------------------------------------------------
 # 融合
 # ---------------------------------------------------------------------------
